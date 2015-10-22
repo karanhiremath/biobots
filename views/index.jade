@@ -1,0 +1,22 @@
+html
+  head
+    title BioBots Build Manager
+    link(rel='stylesheet', href='stylesheets/style.css')
+  body
+    h1 Welcome to BioBots Build Manager
+    h2!= message
+    form(name="create-build", method="post")
+      div.input
+        span.label Build Name
+        input(type="text", name="name")
+      div.input
+        span.label Build Speed
+        input(type="text", name="speed")
+      div.input
+        span.label Build Resolution
+        input(type="text", name="resolution")
+      div.input
+        span.label Curing Time
+        input(type="text", name="curing")
+      div.actions
+        input(type="submit")

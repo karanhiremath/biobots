@@ -1,0 +1,19 @@
+html
+  head
+    title BioBots Build List
+    link(rel='stylesheet', href='stylesheets/style.css')
+  body
+    h1 Welcome to BioBots Build List
+    table
+      thead 
+        td Build Name
+        td Build Speed
+        td Build Resolution
+        td Curing Time
+      tbody
+      each build in builds
+        tr
+          td= build.name
+          td= build.speed
+          td= build.resolution
+          td= build.curing
